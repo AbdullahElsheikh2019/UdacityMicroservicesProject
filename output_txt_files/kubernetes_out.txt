@@ -1,9 +1,21 @@
-(.devops) ec2-user:~/environment/DevOps_Microservices/project-ml-microservice-kubernetes (master) $ ./run_kubernetes.sh 
+<Ouput in the main terminal>
+
+(.devops) ec2-user:~/environment/UdacityMicroservicesProject (master) $ ./run_kubernetes.sh                                                                              
 Flag --generator has been deprecated, has no effect and will be removed in the future.
 Error from server (AlreadyExists): pods "flasksklearn" already exists
 NAME           READY   STATUS    RESTARTS   AGE
-flasksklearn   1/1     Running   0          24m
+flasksklearn   1/1     Running   0          27m
 Forwarding from 127.0.0.1:8000 -> 80
 Forwarding from [::1]:8000 -> 80
 Handling connection for 8000
 Handling connection for 8000
+Handling connection for 8000
+
+<Ouput in the second terminal>
+(.devops) ec2-user:~/environment/UdacityMicroservicesProject (master) $ ./make_prediction.sh 
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
